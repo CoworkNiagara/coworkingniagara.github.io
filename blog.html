@@ -1,0 +1,13 @@
+---
+title: Independently, together.
+description: "The blog for Cowork Niagara"
+layout: post
+---
+<main id="blog">
+  <section id="feature-post">
+    {% for post in site.posts limit:1 %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt}}</p>
+    {% endfor %}
+  </section>
+</main>
