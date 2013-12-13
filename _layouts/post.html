@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>{{ page.title }} | Cowork Niagara Blog</title>
-	<meta name="description" content="{{ page.description }}">
-   {% include scripts.html %}
-   <link rel="stylesheet" href="/stylesheets/app.css" />
+  <meta charset="utf-8" />
+  <title>{{ page.title }} | Cowork Niagara Blog</title>
+  <meta name="description" content="{{ page.description }}">
+  {% include scripts.html %}
+  <link rel="stylesheet" href="/stylesheets/app.css" />
 </head>
 <body>
-	<div class="post">
-		{% include header.html %}
-		<div class="article">
+  <div class="post">
+    {% include header.html %}
+    <div class="article">
       {{ content }}
     </div>
     {% include sidebar.html %}
-		{% include footer.html %}
-	</div>
+    {% include footer.html %}
+  </div>
 </body>
 </html>

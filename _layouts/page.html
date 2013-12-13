@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8" />
-	<title>{{ page.title }}</title>
-	<meta name="description" content="{{ page.description }}">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
   <link rel="stylesheet" href="/stylesheets/app.css" />
   {% include scripts.html %}
 </head>
 <body>
-	<div class="page large-12 columns">
-		{% include header.html %}
-		{{ content }}
-		{% include footer.html %}
-	</div>
+  <div class="page large-12 columns">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
 </body>
 </html>
