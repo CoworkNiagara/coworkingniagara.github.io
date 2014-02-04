@@ -50,7 +50,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   line-height: 1;
@@ -2099,7 +2099,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 36, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
@@ -2796,7 +2796,7 @@ select {
 /* line 197, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button, .button {
   cursor: pointer;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4390,7 +4390,7 @@ kbd {
 /* line 87, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4953,7 +4953,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
 }
 /* line 139, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .price {
@@ -4963,7 +4963,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
 }
 /* line 140, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .description {
@@ -5147,7 +5147,7 @@ ul.pagination li {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
 }
 /* line 54, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
@@ -5163,7 +5163,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child {
   color: #4d4d4d;
   font-weight: normal;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
 }
 /* line 69, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -5332,7 +5332,7 @@ ul.pagination li {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -5677,7 +5677,7 @@ table tfoot tr td {
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 41, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -5965,7 +5965,7 @@ p aside {
 /* Default header styles */
 /* line 182, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #222222;
@@ -6544,7 +6544,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-family: "Merriweather", "Times New Roman", serif;
+  font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   background: #333333;
@@ -7709,43 +7709,50 @@ ul, ol {
   margin-left: 3em;
 }
 
-/* line 19, ../scss/app.scss */
+/* line 17, ../scss/app.scss */
+article img {
+  padding: .125em;
+  border: 0.875em solid;
+  background: #6d6f71;
+}
+
+/* line 25, ../scss/app.scss */
 .colours ul li {
   height: 6em;
   width: 6em;
-  margin-right: 1em;
+  margin: 0 1em 1em 0;
   font-size: .75em;
   list-style-type: none;
   display: inline-block;
   text-align: center;
   padding: 2em 1em;
 }
-/* line 29, ../scss/app.scss */
+/* line 35, ../scss/app.scss */
 .colours ul li.mirkwoodmoss {
   background-color: #5b6150;
   color: white;
 }
-/* line 34, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 .colours ul li.sage {
   background-color: #8a915d;
   color: black;
 }
-/* line 39, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .colours ul li.martiniolive {
   background-color: #b9c051;
   color: black;
 }
-/* line 44, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .colours ul li.starfruit {
   background-color: #e9ef00;
   color: black;
 }
-/* line 49, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .colours ul li.lime {
   background-color: #cfe700;
   color: black;
 }
-/* line 54, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .colours ul li.dulguldur {
   background-color: #6d6f71;
   color: white;

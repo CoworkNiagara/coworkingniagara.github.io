@@ -14,12 +14,18 @@ $starfruit: #E9EF00;
 $lime: #CFE700;
 $dulguldur: #6D6F71;
 
+article img {
+  padding: .125em;
+  border: .875em solid ;
+  background: $dulguldur;
+}
+
 
 .colours ul { 
   li {
     height: 6em;
     width: 6em;
-    margin-right: 1em;
+    margin: 0 1em 1em 0;
     font-size: .75em;
     list-style-type: none;
     display: inline-block;
