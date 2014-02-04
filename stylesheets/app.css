@@ -7703,3 +7703,50 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important;
 }
+
+/* line 5, ../scss/app.scss */
+ul, ol {
+  margin-left: 3em;
+}
+
+/* line 19, ../scss/app.scss */
+.colours ul li {
+  height: 6em;
+  width: 6em;
+  margin-right: 1em;
+  font-size: .75em;
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  padding: 2em 1em;
+}
+/* line 29, ../scss/app.scss */
+.colours ul li.mirkwoodmoss {
+  background-color: #5b6150;
+  color: white;
+}
+/* line 34, ../scss/app.scss */
+.colours ul li.sage {
+  background-color: #8a915d;
+  color: black;
+}
+/* line 39, ../scss/app.scss */
+.colours ul li.martiniolive {
+  background-color: #b9c051;
+  color: black;
+}
+/* line 44, ../scss/app.scss */
+.colours ul li.starfruit {
+  background-color: #e9ef00;
+  color: black;
+}
+/* line 49, ../scss/app.scss */
+.colours ul li.lime {
+  background-color: #cfe700;
+  color: black;
+}
+/* line 54, ../scss/app.scss */
+.colours ul li.dulguldur {
+  background-color: #6d6f71;
+  color: white;
+}

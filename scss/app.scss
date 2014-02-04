@@ -1,2 +1,60 @@
 @import "settings";
 @import "foundation";
+
+
+ul, ol {
+  margin-left: 3em;
+}
+
+//colours from styletiles
+$mirkwoodmoss: #5B6150;
+$sage: #8A915D;
+$martiniolive: #B9C051;
+$starfruit: #E9EF00;
+$lime: #CFE700;
+$dulguldur: #6D6F71;
+
+
+.colours ul { 
+  li {
+    height: 6em;
+    width: 6em;
+    margin-right: 1em;
+    font-size: .75em;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 2em 1em;
+    
+    &.mirkwoodmoss {
+      background-color: $mirkwoodmoss;
+      color: white;
+    }
+    
+    &.sage {
+      background-color: $sage;
+      color: black;
+    }
+    
+    &.martiniolive {
+      background-color: $martiniolive;
+      color: black;
+    }
+    
+    &.starfruit {
+      background-color: $starfruit;
+      color: black; 
+    }
+    
+    &.lime {
+      background-color: $lime;
+      color: black; 
+    }
+    
+    &.dulguldur {
+      background-color: $dulguldur;
+      color: white; 
+    }
+    
+  }
+}
