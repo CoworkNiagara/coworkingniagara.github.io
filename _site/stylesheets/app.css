@@ -7709,14 +7709,26 @@ ul, ol {
   margin-left: 3em;
 }
 
-/* line 17, ../scss/app.scss */
+/* line 18, ../scss/app.scss */
 article img {
   padding: .125em;
-  border: 0.875em solid;
-  background: #6d6f71;
+  border: 0.875em solid #6d6f71;
+  background: #eee;
 }
 
-/* line 25, ../scss/app.scss */
+/* line 24, ../scss/app.scss */
+.fancy-border {
+  background: transparent url("../images/border.png") repeat-x left bottom;
+  padding-bottom: .125em;
+  margin-bottom: .25em;
+}
+
+/* line 30, ../scss/app.scss */
+body {
+  color: #6d6f71;
+}
+
+/* line 35, ../scss/app.scss */
 .colours ul li {
   height: 6em;
   width: 6em;
@@ -7727,33 +7739,37 @@ article img {
   text-align: center;
   padding: 2em 1em;
 }
-/* line 35, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .colours ul li.mirkwoodmoss {
   background-color: #5b6150;
   color: white;
 }
-/* line 40, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .colours ul li.sage {
   background-color: #8a915d;
   color: black;
 }
-/* line 45, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 .colours ul li.martiniolive {
   background-color: #b9c051;
   color: black;
 }
-/* line 50, ../scss/app.scss */
+/* line 60, ../scss/app.scss */
 .colours ul li.starfruit {
   background-color: #e9ef00;
   color: black;
 }
-/* line 55, ../scss/app.scss */
+/* line 65, ../scss/app.scss */
 .colours ul li.lime {
   background-color: #cfe700;
   color: black;
 }
-/* line 60, ../scss/app.scss */
+/* line 70, ../scss/app.scss */
 .colours ul li.dulguldur {
   background-color: #6d6f71;
   color: white;
+}
+/* line 75, ../scss/app.scss */
+.colours ul li.tangerine {
+  background-color: #fc9705;
 }

@@ -13,13 +13,23 @@ $martiniolive: #B9C051;
 $starfruit: #E9EF00;
 $lime: #CFE700;
 $dulguldur: #6D6F71;
+$tangerine: #FC9705;
 
 article img {
   padding: .125em;
-  border: .875em solid ;
-  background: $dulguldur;
+  border: .875em solid $dulguldur;
+  background: #eee;
 }
 
+.fancy-border {
+  background: transparent url('../images/border.png') repeat-x left bottom;
+  padding-bottom: .125em;
+  margin-bottom: .25em;
+}
+
+body {
+  color: $dulguldur;
+}
 
 .colours ul { 
   li {
@@ -60,6 +70,10 @@ article img {
     &.dulguldur {
       background-color: $dulguldur;
       color: white; 
+    }
+    
+    &.tangerine {
+      background-color: $tangerine;
     }
     
   }
