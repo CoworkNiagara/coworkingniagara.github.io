@@ -4,24 +4,28 @@
   <meta charset="utf-8" />
   <title>So this coworking thing is really catching on, eh? | Cowork Niagara Blog</title>
   <meta name="description" content="">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="/js/modernizr/modernizr.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/stylesheets/app.css" />
+  <link rel="stylesheet" href="/stylesheets/app.css">
 </head>
 <body>
   <div class="post">
     <header>
-  <nav class="navigation">
-    <ul>
-      <li class="home"><a href="/">Home</a></li>
-      <li class="values"><a href="/our-values.html">Our values</a></li>
-      <li class="good-fit"><a href="/is-it-for-me.html" title="Is coworking a good fit for you?">Is is for me?</a></li>
-      <li class="roadmap"><a href="/roadmap.html" title="List of upcoming milestones">Roadmap</a></li>
-      <li class="how">How</li>
-      <li class="blog"><a href="/blog.html">Blog</a></li>
+  <nav class="navigation top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="/">Cowork Niagara</a></h1>
+      </li>
     </ul>
+    <section class="top-bar-section">
+      <ul class="left">
+        <li class="values"><a href="/our-values.html">Our values</a></li>
+        <li class="good-fit"><a href="/is-it-for-me.html" title="Is coworking a good fit for you?">Is is for me?</a></li>
+        <li class="roadmap"><a href="/roadmap.html" title="List of upcoming milestones">Roadmap</a></li>
+        <li class="how"><a href="#">How</a></li>
+        <li class="blog"><a href="/blog.html">Blog</a></li>
+      </ul>
+    </section>
   </nav>
 </header>
     <div class="article">
@@ -65,5 +69,11 @@
   <p>&copy; copyright 2011 - 2014 Cowork Niagara Co-operative Inc. All rights reserved.</p>
 </footer>
   </div>
+  <script src="http:////ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="/bower_components/foundation/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
 </body>
 </html>
