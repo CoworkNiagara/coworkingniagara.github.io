@@ -7773,3 +7773,8 @@ body {
 .colours ul li.tangerine {
   background-color: #fc9705;
 }
+
+/* line 82, ../scss/app.scss */
+.navigation .title-area h1 img {
+  padding-right: .5em;
+}
