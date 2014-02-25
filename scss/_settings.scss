@@ -36,7 +36,7 @@ $rem-base: 16px;
 
 // We use these to control various global styles
 $body-bg: #fff;
-$body-font-color: #222;
+$body-font-color: #444;
 $body-font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
 $body-font-weight: 300;
 $body-font-style: normal;
@@ -46,7 +46,7 @@ $body-font-style: normal;
 $header-font-family: $body-font-family;
 $header-font-weight: 700;
 //$header-font-style: normal !default;
-//$header-font-color: #222 !default;
+$header-font-color: #444 !default;
 //$header-line-height: 1.4 !default;
 //$header-top-margin: .2rem !default;
 //$header-bottom-margin: .5rem !default;
@@ -61,12 +61,12 @@ $font-smoothing: antialiased;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: #FC9705;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -941,8 +941,8 @@ $font-smoothing: antialiased;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #FC9705;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
