@@ -10,11 +10,11 @@
   {% include styles.html %}
 </head>
 <body class="{{ page.pageclass }}">
+  {% include header.html %}
   <div class="page large-12 columns">
-    {% include header.html %}
     {{ content }}
-    {% include footer.html %}
   </div>
+  {% include footer.html %}
   {% include scripts_bottom.html %}
 </body>
 </html>

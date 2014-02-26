@@ -7803,12 +7803,19 @@ body.front #introduction h1 strong {
   line-height: 1.3;
   margin-top: .5em;
 }
+/* line 107, ../scss/app.scss */
+body.front #introduction .cta {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
 
-/* line 111, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 footer {
   position: fixed;
   bottom: 0;
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  background: #fc9705;
+  color: white;
 }

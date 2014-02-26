@@ -103,6 +103,11 @@ body.front {
         margin-top: .5em;
       }
     }
+    
+    .cta {
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
   }
   
 }
@@ -114,4 +119,7 @@ footer {
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  background: $primary-color;
+  color: white;
 }
+
