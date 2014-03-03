@@ -7949,16 +7949,17 @@ footer {
 }
 /* line 161, ../scss/app.scss */
 #is-for-you h1 {
-  background: #e9ef00 url("../images/silhouette.svg") no-repeat center left;
+  background: #e9ef00 url("../images/silhouette.svg") no-repeat top left;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 8em;
   padding: 4em 1em 1em;
-  text-align: right;
+  text-align: left;
+  margin: -.2em -1em .5em;
 }
-/* line 169, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 #is-for-you h1 strong {
   font-weight: 700;
   text-transform: uppercase;
@@ -7966,13 +7967,13 @@ footer {
   letter-spacing: -.06em;
 }
 
-/* line 179, ../scss/app.scss */
+/* line 180, ../scss/app.scss */
 #our-values ul,
 #is-for-you ul {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 182, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 #our-values ul li,
 #is-for-you ul li {
   list-style-type: none;

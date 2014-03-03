@@ -160,11 +160,12 @@ footer {
   
   h1 {
     
-    background: $starfruit url('../images/silhouette.svg') no-repeat center left;
+    background: $starfruit url('../images/silhouette.svg') no-repeat top left;
     @include background-size(cover);
     min-height: 8em;
     padding: 4em 1em 1em;
-    text-align: right;
+    text-align: left;
+    margin: -.2em -1em .5em;
     
     strong {
       @include blocktext;
