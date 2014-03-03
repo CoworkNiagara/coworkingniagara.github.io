@@ -1,4 +1,69 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+/* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 /* line 287, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
   font-family: "/only screen and (max-width: 40em)/";
@@ -7704,31 +7769,56 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 5, ../scss/app.scss */
-ul, ol {
-  margin-left: 3em;
+/* line 20, ../scss/app.scss */
+.page {
+  margin: .5em 0em;
 }
 
-/* line 18, ../scss/app.scss */
+/* line 24, ../scss/app.scss */
 article img {
   padding: .125em;
   border: 0.875em solid #6d6f71;
   background: #eee;
 }
 
-/* line 24, ../scss/app.scss */
+/* line 30, ../scss/app.scss */
 .fancy-border {
   background: transparent url("../images/border.png") repeat-x left bottom;
   padding-bottom: .125em;
   margin-bottom: .25em;
 }
 
-/* line 30, ../scss/app.scss */
+/* line 36, ../scss/app.scss */
 body {
   color: #6d6f71;
 }
 
-/* line 35, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
+main h1 {
+  margin: .5em auto;
+}
+/* line 47, ../scss/app.scss */
+main#our-values h1 span {
+  background: #5b6150 url("../images/pictures/coworking-mahtay.jpg") no-repeat center left;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: -.06em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: rgba(34, 34, 34, 0.8) 0.05em 0.05em 0.05em;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.1;
+  min-height: 300px;
+  padding-top: 6em;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+/* line 66, ../scss/app.scss */
 .colours ul li {
   height: 6em;
   width: 6em;
@@ -7739,77 +7829,76 @@ body {
   text-align: center;
   padding: 2em 1em;
 }
-/* line 45, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .colours ul li.mirkwoodmoss {
   background-color: #5b6150;
   color: white;
 }
-/* line 50, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .colours ul li.sage {
   background-color: #8a915d;
   color: black;
 }
-/* line 55, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .colours ul li.martiniolive {
   background-color: #b9c051;
   color: black;
 }
-/* line 60, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .colours ul li.starfruit {
   background-color: #e9ef00;
   color: black;
 }
-/* line 65, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 .colours ul li.lime {
   background-color: #cfe700;
   color: black;
 }
-/* line 70, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .colours ul li.dulguldur {
   background-color: #6d6f71;
   color: white;
 }
-/* line 75, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .colours ul li.tangerine {
   background-color: #fc9705;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 .navigation .title-area h1 img {
   padding-right: .5em;
 }
 
-/* line 86, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 body.front {
   background: white url("/images/square-bg.png") repeat -20px -20px;
   text-align: center;
 }
-/* line 90, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 body.front #introduction {
   max-width: 60em;
   margin: 0 auto;
 }
-/* line 94, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 body.front #introduction h1 {
   font-weight: 300;
 }
-/* line 96, ../scss/app.scss */
+/* line 128, ../scss/app.scss */
 body.front #introduction h1 strong {
-  font-weight: 700;
   font-size: 2em;
+  margin-top: .5em;
+  font-weight: 700;
   text-transform: uppercase;
   display: block;
   letter-spacing: -.06em;
-  line-height: 1.3;
-  margin-top: .5em;
 }
-/* line 107, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 body.front #introduction .cta {
   font-size: 1.5em;
   margin-top: 1em;
 }
 
-/* line 116, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -7818,4 +7907,73 @@ footer {
   width: 100%;
   background: #fc9705;
   color: white;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 155, ../scss/app.scss */
+  #is-for-you ul.testimonials {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+    *zoom: 1;
+  }
+  /* line 165, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  #is-for-you ul.testimonials:before, #is-for-you ul.testimonials:after {
+    content: " ";
+    display: table;
+  }
+  /* line 166, ../bower_components/foundation/scss/foundation/components/_global.scss */
+  #is-for-you ul.testimonials:after {
+    clear: both;
+  }
+  /* line 35, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  #is-for-you ul.testimonials > li {
+    display: inline;
+    height: auto;
+    float: left;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  #is-for-you ul.testimonials > li {
+    width: 33.33333%;
+    padding: 0 0.625rem 1.25rem;
+  }
+  /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  #is-for-you ul.testimonials > li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 49, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
+  #is-for-you ul.testimonials > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+}
+/* line 161, ../scss/app.scss */
+#is-for-you h1 {
+  background: #e9ef00 url("../images/silhouette.svg") no-repeat center left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 8em;
+  padding: 4em 1em 1em;
+  text-align: right;
+}
+/* line 169, ../scss/app.scss */
+#is-for-you h1 strong {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: -.06em;
+}
+
+/* line 179, ../scss/app.scss */
+#our-values ul,
+#is-for-you ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 182, ../scss/app.scss */
+#our-values ul li,
+#is-for-you ul li {
+  list-style-type: none;
 }

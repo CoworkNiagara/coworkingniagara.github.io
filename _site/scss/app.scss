@@ -1,9 +1,10 @@
 @import "settings";
+@import "mixins";
 @import "foundation";
 
 
 ul, ol {
-  margin-left: 3em;
+  
 }
 
 //colours from styletiles
@@ -14,6 +15,11 @@ $starfruit: #E9EF00;
 $lime: #CFE700;
 $dulguldur: #6D6F71;
 $tangerine: #FC9705;
+
+
+.page {
+  margin: .5em 0em;
+}
 
 article img {
   padding: .125em;
@@ -29,6 +35,31 @@ article img {
 
 body {
   color: $dulguldur;
+}
+
+main {
+  h1 {
+    margin: .5em auto;
+  }
+  
+  &#our-values {
+    h1 {
+      span {
+        background: $mirkwoodmoss url('../images/pictures/coworking-mahtay.jpg') no-repeat center left;
+        @include blocktext;
+        @include background-cover;
+        @include text-shadow(rgba(#222, 0.8) .05em .05em .05em);
+        color: white;
+        font-size: 1.5em;
+        line-height: 1.1;
+        min-height: 300px;
+        padding-top: 6em;
+        margin-bottom: 0.5em;
+        width: 100%;
+      }
+    }
+  }
+  
 }
 
 .colours ul { 
@@ -92,15 +123,12 @@ body.front {
     margin: 0 auto;
     
     h1 {
+      
       font-weight: 300;
       strong {
-        font-weight: 700;
         font-size: 2em;
-        text-transform: uppercase;
-        display: block;
-        letter-spacing: -.06em;
-        line-height: 1.3;
         margin-top: .5em;
+        @include blocktext;
       }
     }
     
@@ -112,7 +140,6 @@ body.front {
   
 }
 
-
 footer {
   position: fixed;
   bottom: 0;
@@ -121,5 +148,40 @@ footer {
   width: 100%;
   background: $primary-color;
   color: white;
+}
+
+
+#is-for-you {
+  ul.testimonials {
+    @media #{$medium-up} {
+      @include block-grid(3);
+    }
+  }
+  
+  h1 {
+    
+    background: $starfruit url('../images/silhouette.svg') no-repeat center left;
+    @include background-size(cover);
+    min-height: 8em;
+    padding: 4em 1em 1em;
+    text-align: right;
+    
+    strong {
+      @include blocktext;
+    }
+  }
+  
+}
+
+
+#our-values,
+#is-for-you {
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style-type: none;
+    }
+  }
 }
 
