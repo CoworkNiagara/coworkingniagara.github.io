@@ -6590,7 +6590,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+  background: #fc9705;
   font-size: 16px;
   margin: 0;
 }
@@ -6612,7 +6612,7 @@ meta.foundation-mq-topbar {
   font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
-  background: #333333;
+  background: #fc9705;
 }
 /* line 293, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
@@ -6651,7 +6651,7 @@ meta.foundation-mq-topbar {
 }
 /* line 324, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover > a {
-  background: #272727;
+  background: #c46f00;
   color: white;
 }
 /* line 331, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6811,7 +6811,7 @@ meta.foundation-mq-topbar {
   }
   /* line 455, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
-    background: #272727;
+    background: #c46f00;
     color: white;
   }
   /* line 460, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6822,7 +6822,7 @@ meta.foundation-mq-topbar {
   }
   /* line 464, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li a:not(.button):hover {
-    background: #272727;
+    background: #c46f00;
   }
   /* line 472, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
@@ -6873,12 +6873,12 @@ meta.foundation-mq-topbar {
     line-height: 1;
     white-space: nowrap;
     padding: 12px 15px;
-    background: #333333;
+    background: #fc9705;
   }
   /* line 522, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
     white-space: nowrap;
-    background: #333333;
+    background: #fc9705;
   }
   /* line 528, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li .dropdown {
@@ -6912,7 +6912,7 @@ meta.foundation-mq-topbar {
 
   /* line 567, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
-    background: #272727;
+    background: #c46f00;
     color: white;
   }
   /* line 573, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7771,7 +7771,7 @@ th.hide-for-touch {
 
 /* line 20, ../scss/app.scss */
 .page {
-  margin: .5em 0em;
+  margin: .5em 0em 3em;
 }
 
 /* line 24, ../scss/app.scss */
@@ -7793,32 +7793,32 @@ body {
   color: #6d6f71;
 }
 
-/* line 41, ../scss/app.scss */
-main h1 {
-  margin: .5em auto;
-}
-/* line 47, ../scss/app.scss */
-main#our-values h1 span {
+/* line 43, ../scss/app.scss */
+main#our-values h1 {
   background: #5b6150 url("../images/pictures/coworking-mahtay.jpg") no-repeat center left;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: block;
-  letter-spacing: -.06em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   text-shadow: rgba(34, 34, 34, 0.8) 0.05em 0.05em 0.05em;
   color: white;
-  font-size: 1.5em;
+  font-size: 3em;
   line-height: 1.1;
   min-height: 300px;
-  padding-top: 6em;
+  padding: 6em .5em .5em;
   margin-bottom: 0.5em;
-  width: 100%;
+}
+/* line 54, ../scss/app.scss */
+main#our-values h1 span {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: -.06em;
+  font-size: 1.5em;
+  padding-bottom: .25em;
 }
 
-/* line 66, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .colours ul li {
   height: 6em;
   width: 6em;
@@ -7829,61 +7829,61 @@ main#our-values h1 span {
   text-align: center;
   padding: 2em 1em;
 }
-/* line 76, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .colours ul li.mirkwoodmoss {
   background-color: #5b6150;
   color: white;
 }
-/* line 81, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .colours ul li.sage {
   background-color: #8a915d;
   color: black;
 }
-/* line 86, ../scss/app.scss */
+/* line 84, ../scss/app.scss */
 .colours ul li.martiniolive {
   background-color: #b9c051;
   color: black;
 }
-/* line 91, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .colours ul li.starfruit {
   background-color: #e9ef00;
   color: black;
 }
-/* line 96, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .colours ul li.lime {
   background-color: #cfe700;
   color: black;
 }
-/* line 101, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .colours ul li.dulguldur {
   background-color: #6d6f71;
   color: white;
 }
-/* line 106, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .colours ul li.tangerine {
   background-color: #fc9705;
 }
 
-/* line 113, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .navigation .title-area h1 img {
   padding-right: .5em;
 }
 
-/* line 117, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 body.front {
   background: white url("/images/square-bg.png") repeat -20px -20px;
   text-align: center;
 }
-/* line 121, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 body.front #introduction {
   max-width: 60em;
   margin: 0 auto;
 }
-/* line 125, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
 body.front #introduction h1 {
   font-weight: 300;
 }
-/* line 128, ../scss/app.scss */
+/* line 126, ../scss/app.scss */
 body.front #introduction h1 strong {
   font-size: 2em;
   margin-top: .5em;
@@ -7892,13 +7892,13 @@ body.front #introduction h1 strong {
   display: block;
   letter-spacing: -.06em;
 }
-/* line 135, ../scss/app.scss */
+/* line 133, ../scss/app.scss */
 body.front #introduction .cta {
   font-size: 1.5em;
   margin-top: 1em;
 }
 
-/* line 143, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -7910,7 +7910,7 @@ footer {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 155, ../scss/app.scss */
+  /* line 153, ../scss/app.scss */
   #is-for-you ul.testimonials {
     display: block;
     padding: 0;
@@ -7947,7 +7947,7 @@ footer {
     clear: both;
   }
 }
-/* line 161, ../scss/app.scss */
+/* line 159, ../scss/app.scss */
 #is-for-you h1 {
   background: #e9ef00 url("../images/silhouette.svg") no-repeat top left;
   -webkit-background-size: cover;
@@ -7959,7 +7959,7 @@ footer {
   text-align: left;
   margin: -.2em -1em .5em;
 }
-/* line 170, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 #is-for-you h1 strong {
   font-weight: 700;
   text-transform: uppercase;
@@ -7967,14 +7967,22 @@ footer {
   letter-spacing: -.06em;
 }
 
-/* line 180, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 #our-values ul,
 #is-for-you ul {
   margin-left: 0;
   padding-left: 0;
 }
-/* line 183, ../scss/app.scss */
+/* line 181, ../scss/app.scss */
 #our-values ul li,
 #is-for-you ul li {
   list-style-type: none;
+}
+
+/* line 187, ../scss/app.scss */
+#our-values h1 {
+  margin-top: -8px;
+  margin-left: -.5em;
+  margin-right: -.5em;
+  padding: 0 .25em;
 }
