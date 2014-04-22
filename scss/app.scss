@@ -196,3 +196,8 @@ footer {
     
   }
 }
+
+/* Move Menu text away from icon */
+.top-bar .toggle-topbar.menu-icon a {
+  text-indent: -70px;
+}
