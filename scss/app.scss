@@ -201,3 +201,13 @@ footer {
 .top-bar .toggle-topbar.menu-icon a {
   text-indent: -70px;
 }
+
+
+.pricing>ul {
+  @include block-grid(6);
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
