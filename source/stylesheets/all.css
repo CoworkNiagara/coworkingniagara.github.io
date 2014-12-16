@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body {
+
+}
+
+.welcome {
+  background-size: cover;
+  background: url("../images/splash.jpg") center center no-repeat;
+}
