@@ -1,3 +1,6 @@
+page "/*", layout: :subpage
+page "/", layout: :layout
+
 ###
 # Compass
 ###

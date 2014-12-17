@@ -1,0 +1,37 @@
+<% wrap_layout :layout do %>
+  <div class="header">
+    <div class="section">
+      <div class="logo">
+        <%= link_to %{<img src="/images/logo-horizontal.svg">}, "/" %>
+      </div>
+
+      <div class="navigation">
+        <%= partial "navigation.html" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="section">
+      <h1><%= current_page.data.title %></h1>
+    </div>
+  </div>
+
+  <%= yield %>
+
+  <div class="footer">
+    <div class="section">
+      <div class="niagara-coop-network">
+        <img src="/images/niagara-coop-network.svg">
+      </div>
+
+      <div class="links">
+        <img src="/images/logo_transparent.png">
+
+        <%= partial "navigation.html" %>
+
+        <!--<p>Copyright &copy; 2014 Cowork Niagara</p>-->
+      </div>
+    </div>
+  </div>
+<% end %>
