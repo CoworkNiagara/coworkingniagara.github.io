@@ -25,6 +25,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    width: 2%;
   }
 
   a {
@@ -34,6 +35,15 @@ body {
 }
 
 body.index {
+  & .item {
+    padding: 2em 0;
+
+    &:nth-child(2n+1) {
+      background-color: rgba(87, 255, 62, 0.2);
+      color: #000;
+    }
+  }
+
   .welcome {
     background-size: cover;
     background: url("../images/splash.jpg") center center no-repeat fixed;
@@ -72,37 +82,48 @@ body.index {
     .call-to-action {
       @include span-columns(4);
 
-      button {
-        background-color: #FFB100;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+
+      .button {
+        @extend %button;
+
+        background-color: rgba(38, 185, 16, 1);
         box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+
+        &:hover {
+          background: orange;
+        }
       }
     }
   }
+
+  .section {
+    //min-height: 10em;
+  }
 }
 
-body.about,
-body.find-us,
-body.events {
-  .header {
-    @include clearfix;
+.header {
+  @include clearfix;
 
-    background-color: #ffb100;
+  background-color: #ffb100;
+  height: 4em;
+
+  .logo {
+    @include span-columns(3);
+
+    text-align: center;
+  }
+
+  .navigation {
+    @include span-columns(9);
+
     height: 4em;
 
-    .logo {
-      @include span-columns(3);
-
-      text-align: center;
-    }
-
-    .navigation {
-      @include span-columns(9);
-
-      height: 4em;
-
-      a {
-        font-weight: 600;
-      }
+    a {
+      font-weight: 600;
     }
   }
 }
@@ -121,11 +142,6 @@ body.events {
   }
 }
 
-body.about {
-  ul {
-   @extend %default-ul;
-  }
-}
 
 body.find-us {
   .map {
@@ -188,4 +204,8 @@ body.find-us {
       margin-left: 1em;
     }
   }
+}
+
+ul.list {
+   @extend %default-ul;
 }
