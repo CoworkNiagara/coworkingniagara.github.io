@@ -5,7 +5,7 @@
 @import "neat/neat";
 
 body {
-  font-family: $helvetica;
+  font-family: $sans-serif;
   margin: 0;
 }
 
@@ -45,8 +45,10 @@ body.index {
   }
 
   .welcome {
-    background-size: cover;
-    background: url("../images/splash.jpg") center center no-repeat fixed;
+    background: url("../images/splash.jpg") 0% -8em no-repeat fixed;
+    background-size: auto;
+    min-height: 38em;
+    height: 60%;
 
     .navigation {
       @include span-columns(9);
@@ -65,7 +67,8 @@ body.index {
 
   .color-overlay {
     background: rgba(255, 177, 0, 0.75);
-    height: 100%;
+    min-height: 38em;
+    height: 60%;
   }
 
   .hero {
@@ -75,7 +78,7 @@ body.index {
       @include span-columns(8);
 
       color: #fff;
-      font-family: $helvetica;
+      font-family: $sans-serif;
       font-weight: normal;
     }
 
