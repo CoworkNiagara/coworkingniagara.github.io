@@ -17,59 +17,73 @@ title: Welcome to Niagara's First Coworking Community
     <div class="section">
       <div class="hero">
         <h1>
-          <strong>Cowork Niagara</strong> is a shared space where freelancers, social
-          entreprenuers and non-profit groups work, collaborate, and make awesome stuff
+          <strong>Cowork Niagara</strong> is where freelancers, social
+          entreprenuers and non-profit groups work, collaborate and make awesome stuff
           together.
         </h1>
-
         <div class="call-to-action">
           <p>
-            Do you want increased productivity? Less awkward glances at your
-            neighborhood cafe?
+            Are you ready for a hyper-productive, enjoyable and friendly atmosphere where you'll do your best work?
           </p>
-
-          <a href="/join.html" class="button">I'm <em>totally</em> in!</a>
+          <p>
+            Are you ready to earn <strong>up to 30% more this year</strong> by finding new clients, giving them
+            more value and spending less time collecting from them for the work you did?
+          </p>
+          <div class="button">
+          <% link_to 'join.html' do %>
+            <span class="label">I'm <em>totally</em> in!</span><span class="action">Join Cowork Niagara now</span>
+          <% end %>
+          </div>
         </div>
       </div>
     </div><!--/ .section -->
   </div><!--/ .color-overlay -->
 </div><!--/ .welcome -->
 
+<div class="item events">
+  <div class="section">
+    <div class="content">
+      <h2>Events for Niagara's Independent workforce</h2>
+      <p>
+        Cowork Niagara proudly offers Niagara's <strong>largest calendar of professional
+        development activities for the independent workforce. </strong>. Cowork Niagara organizes
+        educational, interactive, fun, free and members-only events and meet-ups for
+        entrepeneurs in the marketing, sales, web and software development industries.
+        <%= link_to "Find out more about events for independent professionals", "/events.html" %>.
+      </p>
+    </div>
+    <ul class="events-list">
+      <li class="devtricks">DevTricks: 2nd Mondays</li>
+      <li class="biztricks">BizTricks: 2nd Wednesdays</li>
+      <li class="unstuck">Unstuck: Last Thursday of each month</li>
+      <li class="writetricks">WriteTricks: 3rd Thursday</li>
+      <li class="podtricks">PodTricks: 1st Thursday</li>
+    </ul>
+  </div>
+</div>
 <div class="item">
   <div class="section">
-    <h2>The Co-operative</h2>
-
+    <h2>We're a co-operative business: Every member is also an owner</h2>
     <p>
-      As Niagara's first and only co-operative coworking space, we're entirely
-      community owned and managed. Our volunteer board members, using the wishes
-      of our members, ensure that we are providing services that directly benefit
-      our members and the community. <%= link_to "Find out more about our co-operative", "/about.html" %>
-      and why we chose the co-operative model.
+      Lots of people talk about the importance of community, but we've built it into our DNA.
+    </p>
+    <p>
+      As Niagara's first coworking community and the only co-operative coworking space in Ontario,
+      we're entirely community owned and managed. Our volunteer board members, directed by
+      our membership, ensure we provide services that directly benefit our members and the community.
+      <%= link_to "Find out more about our co-operative", "/about.html" %> and why we chose the
+      co-operative model.
     </p>
   </div>
 </div>
 
 <div class="item">
   <div class="section">
-    <h2>The Space</h2>
-
+    <h2>A workplace to call your own: The Cowork Niagara St. Catharines facility</h2>
     <p>
-      Located in beautiful downtown St. Catharines, Cowork Niagara occupies 2 recently renovated
-      floors in a fantastic building, conveniently located near many great restaurants and local
-      business hubs. <%= link_to "Find out more about our space", "/find-us.html" %>.
-    </p>
-  </div>
-</div>
-
-<div class="item">
-  <div class="section">
-    <h2>The Events</h2>
-
-    <p>
-      Proudly offering the region's largest calendar of indepently focused events,
-      Cowork Niagara organizes educational, interactive, fun, free and members-only
-      events and meet-ups for entrepeneurs in the marketing, sales, web and software
-      development industries. <%= link_to "Find out more about our events", "/events.html" %>.
+      Located in beautiful downtown St. Catharines, Cowork Niagara's first workspace occupies
+      2 recently renovated floors in a fantastic building, conveniently located near many great
+      restaurants and local business hubs. <%= link_to "Find out more about our space", "/find-us.html" %>.
     </p>
   </div>
 </div>
