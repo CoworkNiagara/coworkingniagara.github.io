@@ -4,6 +4,11 @@
 @import "base/base";
 @import "neat/neat";
 
+$hero-height: 70vh;
+$visual-grid: true !global;
+
+$cowork-green: #e1e540;
+
 body {
   font-family: $sans-serif;
   margin: 0;
@@ -39,16 +44,15 @@ body.index {
     padding: 2em 0;
 
     &:nth-child(2n+1) {
-      background-color: rgba(87, 255, 62, 0.2);
+      background-color: $cowork-green;
       color: #000;
     }
   }
 
   .welcome {
-    background: url("../images/splash.jpg") 0% -8em no-repeat fixed;
-    background-size: auto;
-    min-height: 38em;
-    height: 60%;
+    background: url("../images/splash.jpg") top center no-repeat fixed;
+    background-size: cover;
+    height: $hero-height;
 
     .navigation {
       @include span-columns(9);
@@ -67,15 +71,14 @@ body.index {
 
   .color-overlay {
     background: rgba(255, 177, 0, 0.75);
-    min-height: 38em;
-    height: 60%;
+    height: $hero-height;
   }
 
   .hero {
     padding: 4em 0 1em;
 
     h1 {
-      @include span-columns(8);
+      @include span-columns(6);
 
       color: #fff;
       font-family: $sans-serif;
@@ -83,21 +86,33 @@ body.index {
     }
 
     .call-to-action {
-      @include span-columns(4);
+      @include span-columns(6);
 
       color: #fff;
-      text-align: center;
-      font-weight: bold;
+      text-align: left;
       font-size: 1.1rem;
 
       .button {
         @extend %button;
 
-        background-color: rgba(38, 185, 16, 1);
+        background-color: $cowork-green;
         box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+        width: 100%;
+
+        a:link, a:visited {
+          color: #333;
+        }
+
+        span {
+          display: block;
+          font-size: 1.5rem;
+        }
 
         &:hover {
-          background: orange;
+          background: #19b8e2;
+          a:hover {
+            color: white;
+          }
         }
       }
     }
@@ -106,6 +121,41 @@ body.index {
   .section {
     //min-height: 10em;
   }
+}
+
+.index .events {
+  .content {
+    @include span-columns(7);
+  }
+  ul.events-list {
+    @include span-columns(5);
+    li {
+      height: 144px;
+      width: 144px;
+      float: left;
+      @include hide-text();
+      background-size: cover !important;
+    }
+    .devtricks {
+      background: transparent url('../images/events/devtricks.png') no-repeat center center;
+    }
+    .biztricks {
+      background: transparent url('../images/events/biztricks.png') no-repeat center center;
+    }
+    .unstuck {
+      background: transparent url('../images/events/unstuck.png') no-repeat center center;
+    }
+    .writetricks {
+      background: transparent url('../images/events/writetricks.png') no-repeat center center;
+    }
+    .podtricks {
+      background: transparent url('../images/events/podtricks.png') no-repeat center center;
+    }
+  }
+}
+
+.index .item.events {
+
 }
 
 .header {
