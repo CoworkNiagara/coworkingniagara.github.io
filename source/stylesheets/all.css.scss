@@ -110,7 +110,8 @@ body.index {
 
         &:hover {
           background: #19b8e2;
-          a:hover {
+
+          a {
             color: white;
           }
         }
@@ -127,6 +128,7 @@ body.index {
   .content {
     @include span-columns(7);
   }
+
   ul.events-list {
     @include span-columns(5);
     li {
@@ -261,4 +263,40 @@ body.find-us {
 
 ul.list {
    @extend %default-ul;
+}
+
+body.events {
+  .event {
+    display: table;
+    margin-top: 2em;
+  }
+
+  .event-logo {
+    display: table-cell;
+    width: 190px;
+    vertical-align: top;
+    padding-right: 20px;
+  }
+
+  .event-details {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  dd {
+    display: inline;
+    margin: 0;
+  }
+
+  dd:after {
+    display: block;
+    content: '';
+  }
+
+  dt {
+    display: inline-block;
+    min-width: 8em;
+    margin-right: 1em;
+    margin-top: 0;
+  }
 }
