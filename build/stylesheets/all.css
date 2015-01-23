@@ -1,0 +1,591 @@
+@charset "UTF-8";
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"], body.index .hero .call-to-action .button {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477DCA;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover, body.index .hero .call-to-action .button:hover {
+    background-color: #2c5999;
+    color: white; }
+  /* line 18, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/extends/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled, body.index .hero .call-to-action .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 22, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 26, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 30, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 34, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 38, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 42, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 46, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 50, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477DCA;
+  text-decoration: none; }
+  /* line 55, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 59, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 65, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 73, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 79, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 86, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 90, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477DCA;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 55, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 69, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 74, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  /* line 7, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_lists.scss */
+  ul.list {
+    list-style-type: disc;
+    margin-bottom: 0.75em;
+    padding-left: 1.5em; }
+/* line 20, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+/* line 2, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 12, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin: 0; }
+
+/* line 17, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 22, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.navigation ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; }
+/* line 29, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.navigation li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 2%; }
+/* line 36, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.navigation a {
+  color: #fff;
+  text-transform: uppercase; }
+
+/* line 43, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.index .item {
+  padding: 2em 0; }
+  /* line 46, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  body.index .item:nth-child(2n+1) {
+    background-color: #e1e540;
+    color: #000; }
+/* line 52, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.index .welcome {
+  background: url("../images/splash.jpg") top center no-repeat fixed;
+  background-size: cover;
+  height: 70vh; }
+  /* line 57, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  body.index .welcome .navigation {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    font-size: 1.4em;
+    height: 9em; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    body.index .welcome .navigation:last-child {
+      margin-right: 0; }
+  /* line 64, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  body.index .welcome .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    height: 9em;
+    text-align: center; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    body.index .welcome .logo:last-child {
+      margin-right: 0; }
+/* line 72, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.index .color-overlay {
+  background: rgba(255, 177, 0, 0.75);
+  height: 70vh; }
+/* line 77, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.index .hero {
+  padding: 4em 0 1em; }
+  /* line 80, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  body.index .hero h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    color: #fff;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    body.index .hero h1:last-child {
+      margin-right: 0; }
+  /* line 88, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  body.index .hero .call-to-action {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    color: #fff;
+    text-align: left;
+    font-size: 1.1rem; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    body.index .hero .call-to-action:last-child {
+      margin-right: 0; }
+    /* line 95, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    body.index .hero .call-to-action .button {
+      background-color: #e1e540;
+      box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+      width: 100%; }
+      /* line 102, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+      body.index .hero .call-to-action .button a:link, body.index .hero .call-to-action .button a:visited {
+        color: #333; }
+      /* line 106, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+      body.index .hero .call-to-action .button span {
+        display: block;
+        font-size: 1.5rem; }
+      /* line 111, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+      body.index .hero .call-to-action .button:hover {
+        background: #19b8e2; }
+        /* line 114, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+        body.index .hero .call-to-action .button:hover a {
+          color: white; }
+
+/* line 128, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.index .events .content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+  .index .events .content:last-child {
+    margin-right: 0; }
+/* line 132, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.index .events ul.events-list {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+  .index .events ul.events-list:last-child {
+    margin-right: 0; }
+  /* line 134, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list li {
+    height: 144px;
+    width: 144px;
+    float: left;
+    overflow: hidden;
+    background-size: cover !important; }
+    /* line 4, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/bourbon/addons/_hide-text.scss */
+    .index .events ul.events-list li:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 100%; }
+  /* line 141, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .devtricks {
+    background: transparent url("../images/events/devtricks.png") no-repeat center center; }
+  /* line 144, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .biztricks {
+    background: transparent url("../images/events/biztricks.png") no-repeat center center; }
+  /* line 147, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .unstuck {
+    background: transparent url("../images/events/unstuck.png") no-repeat center center; }
+  /* line 150, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .writetricks {
+    background: transparent url("../images/events/writetricks.png") no-repeat center center; }
+  /* line 153, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .podtricks {
+    background: transparent url("../images/events/podtricks.png") no-repeat center center; }
+  /* line 156, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .index .events ul.events-list .openhack {
+    background: transparent url("../images/events/openhack.png") no-repeat center center; }
+
+/* line 166, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.header {
+  background-color: #ffb100;
+  height: 4em; }
+  /* line 15, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 172, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: center; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .header .logo:last-child {
+      margin-right: 0; }
+  /* line 178, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .header .navigation {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    height: 4em; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .header .navigation:last-child {
+      margin-right: 0; }
+    /* line 183, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .header .navigation a {
+      font-weight: 600; }
+
+/* line 189, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.masthead {
+  background: url("../images/brickwall.png") repeat-x;
+  margin-bottom: 2em;
+  padding: 1em 0;
+  border-top: 1px solid #ddd;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+  /* line 196, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .masthead h1 {
+    font-size: 1.6em;
+    color: #484848;
+    text-shadow: 2px 2px 2px #ccc; }
+
+/* line 205, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.find-us .map {
+  border: 1px solid #ddd;
+  float: right;
+  margin: 0 0 1em 1em; }
+/* line 211, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.find-us .parking-map {
+  border: 1px solid #ddd;
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin: 0 0 1em 1em; }
+
+/* line 220, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+.footer {
+  background: #1e1e1e;
+  padding: 2em 0;
+  margin-top: 2em; }
+  /* line 225, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .footer .niagara-coop-network {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .footer .niagara-coop-network:last-child {
+      margin-right: 0; }
+    /* line 228, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .footer .niagara-coop-network img {
+      height: 110px; }
+  /* line 233, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+  .footer .links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-left: 25.58941%;
+    color: #fff;
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 85, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/neat/grid/_span-columns.scss */
+    .footer .links:last-child {
+      margin-right: 0; }
+    /* line 242, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .footer .links ul {
+      display: table;
+      table-layout: fixed;
+      height: 110px; }
+    /* line 248, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .footer .links li {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      width: 2%; }
+    /* line 255, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .footer .links a {
+      color: #fff; }
+    /* line 259, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+    .footer .links img {
+      float: right;
+      height: 110px;
+      margin-left: 1em; }
+
+/* line 272, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events .event {
+  display: table;
+  margin-top: 2em; }
+/* line 277, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events .event-logo {
+  display: table-cell;
+  width: 190px;
+  vertical-align: top;
+  padding-right: 20px; }
+/* line 284, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events .event-details {
+  display: table-cell;
+  vertical-align: top; }
+/* line 289, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events dd {
+  display: inline;
+  margin: 0; }
+/* line 294, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events dd:after {
+  display: block;
+  content: ''; }
+/* line 299, /Users/adamdaniels/code/coworkingniagara.github.io/source/stylesheets/all.css.scss */
+body.events dt {
+  display: inline-block;
+  min-width: 8em;
+  margin-right: 1em;
+  margin-top: 0; }
