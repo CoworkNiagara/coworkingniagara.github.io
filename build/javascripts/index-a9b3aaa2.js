@@ -1,0 +1,1 @@
+!function(n){n(document).ready(function(){n(".mobile-toggle").on("click",function(){n(".header .navigation").toggle()})})}(jQuery);
