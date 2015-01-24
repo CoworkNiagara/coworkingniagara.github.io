@@ -1,0 +1,186 @@
+@media only screen and (max-width: 767px) {
+  h2 {
+    margin: 0 0 0.25em;
+  }
+
+  .section {
+    padding: 0 1em;
+  }
+
+  .footer {
+    .links img {
+      display: block;
+    }
+
+    .links ul {
+      display: none;
+    }
+    /*
+    .niagara-coop-network {
+      display: none;
+    }
+
+    .links img {
+      display: none;
+    }
+
+    .links {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+
+    .links ul {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .links li {
+      display: block;
+      width: 100%;
+    }
+
+    .links a {
+      font-size: 2em;
+    }
+    */
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .header .logo {
+    @include span-columns(8);
+  }
+
+  .header .navigation {
+    @include span-columns(12);
+
+    display: none;
+    overflow-y: auto;
+    height: auto;
+
+    ul {
+      display: block;
+      width: 100%;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+    }
+
+    li a {
+      display: block;
+      font-size: 1.3em;
+      padding: 0.25em 0;
+    }
+  }
+
+  .header .mobile-toggle {
+    float: right;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 0.25em;
+  }
+
+  body.index {
+    .welcome {
+      height: 100%;
+
+      .navigation {
+        @include span-columns(6);
+        @include shift(2);
+
+        height: auto;
+
+        ul {
+          display: block;
+        }
+
+        li {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .logo {
+        @include span-columns(4);
+      }
+    }
+
+    .hero {
+      padding: 1em 0;
+    }
+
+    .hero h1 {
+      @include span-columns(12);
+
+      font-size: 1.5em;
+    }
+
+    .hero .call-to-action {
+      @include span-columns(12);
+
+      margin-top: 1em;
+
+      & .button {
+        display: none;
+      }
+    }
+
+    .events {
+      .content {
+        @include span-columns(12);
+      }
+
+      ul.events-list {
+        @include span-columns(12);
+
+        float: left;
+        margin: 0 auto;
+
+        li {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  body.find-us {
+    .map {
+      float: left;
+      margin: 0 auto 1em;
+      width: 100%;
+    }
+
+    .parking-map {
+      float: left;
+      margin: 0 auto 1em;
+      width: 100%;
+    }
+  }
+
+  body.events {
+    .event {
+      display: block;
+    }
+
+    .event-logo {
+      display: block;
+      width: 8em;
+    }
+
+    dt {
+      display: block;
+    }
+
+    dd {
+      display: inline-block;
+      margin-bottom: 0.75em;
+    }
+  }
+}
