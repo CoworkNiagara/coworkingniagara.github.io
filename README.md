@@ -19,6 +19,11 @@ Ruby dependency manager Bundler.
 
 		bundle exec middleman server
 
+
+## Deploying
+
+	git subtree push --prefix build production master
+
 ## Contributing
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for instructions on how to
 contribute to this project.
