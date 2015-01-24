@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 100em) {
   h2 {
     margin: 0 0 0.25em;
   }
@@ -8,43 +8,22 @@
   }
 
   .footer {
-    .links img {
-      display: block;
-    }
-
-    .links ul {
-      display: none;
-    }
-    /*
     .niagara-coop-network {
-      display: none;
-    }
-
-    .links img {
-      display: none;
+      @include span-columns(6);
     }
 
     .links {
+      @include span-columns(6);
+      margin-left: 0;
+    }
+
+    .links img {
       display: block;
-      margin: 0;
-      width: 100%;
     }
 
     .links ul {
-      display: block;
-      width: 100%;
-      height: auto;
+      display: none;
     }
-
-    .links li {
-      display: block;
-      width: 100%;
-    }
-
-    .links a {
-      font-size: 2em;
-    }
-    */
   }
 
   .header {
@@ -79,25 +58,34 @@
     }
   }
 
-  .header .mobile-toggle {
+  .mobile-toggle {
     float: right;
     color: #fff;
-    font-size: 1.8em;
+    font-size: 4em;
     padding: 0.25em;
   }
 
   body.index {
+    .color-overlay {
+      height: 100%;
+    }
+
     .welcome {
       height: 100%;
 
+      .mobile-toggle {
+        font-size: 3em;
+      }
+
       .navigation {
-        @include span-columns(6);
-        @include shift(2);
+        @include span-columns(12);
 
         height: auto;
+        display: none;
 
         ul {
           display: block;
+          width: 100%;
         }
 
         li {
@@ -105,10 +93,17 @@
           width: 100%;
           text-align: center;
         }
+
+        a {
+          font-size: 1.2em;
+          display: block;
+          padding: 0.25em 0;
+        }
       }
 
       .logo {
-        @include span-columns(4);
+        @include span-columns(6);
+        height: auto;
       }
     }
 

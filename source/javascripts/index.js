@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
     $(".mobile-toggle").on("click", function() {
-      $(".header .navigation").toggle();
+      $(".navigation").toggle(600);
     });
 
     //Temporarily commenting out
