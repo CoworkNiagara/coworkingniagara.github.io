@@ -4,6 +4,10 @@
 @import "base/base";
 @import "neat/neat";
 
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 12);
+
 $hero-height: 70vh;
 $visual-grid: true !global;
 
@@ -16,6 +20,7 @@ body {
 
 .section {
   @include outer-container;
+  padding: 0 1em;
 }
 
 .navigation {
@@ -302,6 +307,10 @@ body.events {
     margin-right: 1em;
     margin-top: 0;
   }
+}
+
+.mobile-toggle {
+  display: none;
 }
 
 @import "mobile";
