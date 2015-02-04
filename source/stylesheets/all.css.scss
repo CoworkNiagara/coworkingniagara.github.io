@@ -192,16 +192,21 @@ body.index {
 }
 
 .masthead {
-  background: url("../images/brickwall.png") repeat-x;
+  //background: url("../images/brickwall.png") repeat-x;
+  //background-color: #ccff00;
+  background-color: lighten(#0DFF35, 32%); //#e5e522;
   margin-bottom: 2em;
   padding: 1em 0;
-  border-top: 1px solid #ddd;
-  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  //border-top: 1px solid #ddd;
+  //box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
 
   h1 {
     font-size: 1.6em;
-    color: darken(#eee, 65%);
-    text-shadow: 2px 2px 2px #ccc; //rgba(255, 255, 255, 1);
+    //color: darken(#eee, 65%);
+    //color: #fff;
+    //text-shadow: 2px 2px 2px #ccc; //rgba(255, 255, 255, 1);
+    font-weight: normal;
+    color: #000;
   }
 }
 

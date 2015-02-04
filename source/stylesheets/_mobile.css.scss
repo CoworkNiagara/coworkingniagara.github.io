@@ -172,6 +172,7 @@
 
         li {
           width: 50%;
+          background-size: contain;
         }
       }
     }
@@ -215,5 +216,6 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
   ul.events-list li {
     background-size: auto;
+    //background-size: contain;
   }
 }
