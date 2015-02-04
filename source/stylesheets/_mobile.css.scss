@@ -1,0 +1,221 @@
+@media screen and (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  h2 {
+    margin: 0 0 0.25em;
+  }
+
+  .footer {
+    .niagara-coop-network {
+      @include span-columns(6);
+    }
+
+    .links {
+      @include span-columns(6);
+      margin-left: 0;
+    }
+
+    .links img {
+      display: block;
+    }
+
+    .links ul {
+      display: none;
+    }
+  }
+
+  .masthead h1 {
+    font-size: 1.4em;
+  }
+
+  .header {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 5px;
+  }
+
+  .header .w {
+    width: 100%;
+    display: table;
+  }
+
+  .header .logo {
+    display: table-cell;
+    float: none;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+
+    & img {
+      vertical-align: middle;
+    }
+  }
+
+  .header .mobile-toggle {
+    display: table-cell !important;
+    vertical-align: middle;
+    float: none;
+    text-align: right;
+  }
+
+  .header .navigation {
+    @include span-columns(12);
+
+    display: none;
+    overflow-y: auto;
+    height: auto;
+    clear: both;
+
+    ul {
+      display: block;
+      width: 100%;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+    }
+
+    li a {
+      display: block;
+      font-size: 1.3em;
+      padding: 0.25em 0;
+    }
+  }
+
+  .mobile-toggle {
+    float: right;
+    color: #fff;
+    font-size: 4em;
+    padding: 0.25em;
+    cursor: pointer;
+  }
+
+  .header .mobile-toggle {
+    font-size: 2em;
+  }
+
+  body.index {
+    .color-overlay {
+      height: 100%;
+    }
+
+    .welcome {
+      height: 100%;
+
+      .mobile-toggle {
+        font-size: 3em;
+      }
+
+      .navigation {
+        @include span-columns(12);
+
+        height: auto;
+        display: none;
+
+        ul {
+          display: block;
+          width: 100%;
+        }
+
+        li {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        a {
+          font-size: 1.2em;
+          display: block;
+          padding: 0.25em 0;
+        }
+      }
+
+      .logo {
+        @include span-columns(6);
+        height: auto;
+      }
+    }
+
+    .hero {
+      padding: 1em 0;
+    }
+
+    .hero h1 {
+      @include span-columns(12);
+
+      font-size: 1.5em;
+    }
+
+    .hero .call-to-action {
+      @include span-columns(12);
+
+      margin-top: 1em;
+
+      & .button {
+        display: none;
+      }
+    }
+
+    .events {
+      .content {
+        @include span-columns(12);
+      }
+
+      ul.events-list {
+        @include span-columns(12);
+
+        float: left;
+        margin: 0 auto;
+
+        li {
+          width: 50%;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  body.find-us {
+    .map {
+      float: left;
+      margin: 0 auto 1em;
+      width: 100%;
+    }
+
+    .parking-map {
+      float: left;
+      margin: 0 auto 1em;
+      width: 100%;
+    }
+  }
+
+  body.events {
+    .event {
+      display: block;
+    }
+
+    .event-logo {
+      display: block;
+      width: 8em;
+    }
+
+    dt {
+      display: block;
+    }
+
+    dd {
+      display: inline-block;
+      margin-bottom: 0.75em;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  ul.events-list li {
+    background-size: auto;
+    //background-size: contain;
+  }
+}

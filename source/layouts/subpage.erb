@@ -1,0 +1,29 @@
+<% wrap_layout :layout do %>
+  <div class="header">
+    <div class="section">
+      <div class="w">
+        <div class="logo">
+          <%= link_to %{<img src="/images/logo-horizontal.svg">}, "/" %>
+        </div>
+
+        <div class="mobile-toggle">
+          &#9776;
+        </div>
+      </div>
+
+      <div class="navigation">
+        <%= partial "navigation.html" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="section">
+      <h1><%= current_page.data.title %></h1>
+    </div>
+  </div>
+
+  <%= yield %>
+
+  <%= partial "footer.html" %>
+<% end %>
