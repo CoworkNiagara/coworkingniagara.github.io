@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 @import "bourbon/bourbon";
-@import "base/base";
 @import "neat/neat";
-
+@import "base/base";
 
 $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 12);
@@ -194,7 +193,7 @@ body.index {
 .masthead {
   //background: url("../images/brickwall.png") repeat-x;
   //background-color: #ccff00;
-  background-color: lighten(#0DFF35, 32%); //#e5e522;
+  background-color: $cowork-green; //#e5e522;
   margin-bottom: 2em;
   padding: 1em 0;
   //border-top: 1px solid #ddd;
