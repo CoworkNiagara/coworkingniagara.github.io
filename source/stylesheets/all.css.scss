@@ -10,7 +10,7 @@ $mobile: new-breakpoint(max-width 480px 12);
 $hero-height: 70vh;
 $visual-grid: true !global;
 
-$cowork-green: #e1e540;
+$cowork-green: #8BE074;
 
 body {
   font-family: $sans-serif;
@@ -191,21 +191,16 @@ body.index {
 }
 
 .masthead {
-  //background: url("../images/brickwall.png") repeat-x;
-  //background-color: #ccff00;
-  background-color: $cowork-green; //#e5e522;
+  background-color: $cowork-green;
   margin-bottom: 2em;
   padding: 1em 0;
-  //border-top: 1px solid #ddd;
-  //box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.7);
 
   h1 {
     font-size: 1.6em;
-    //color: darken(#eee, 65%);
-    //color: #fff;
-    //text-shadow: 2px 2px 2px #ccc; //rgba(255, 255, 255, 1);
     font-weight: normal;
-    color: #000;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
 }
 
