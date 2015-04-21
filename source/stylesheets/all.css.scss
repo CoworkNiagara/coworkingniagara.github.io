@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import "compass/css3";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
@@ -8,9 +9,11 @@ $tablet: new-breakpoint(max-width 768px 8);
 $mobile: new-breakpoint(max-width 480px 12);
 
 $hero-height: 70vh;
+$hero-min-height: 34em;
 $visual-grid: true !global;
 
 $cowork-green: #e1e540;
+$charcoal: #333;
 
 body {
   font-family: $sans-serif;
@@ -57,6 +60,7 @@ body.index {
     background: url("../images/splash.jpg") top center no-repeat fixed;
     background-size: cover;
     height: $hero-height;
+    min-height: $hero-min-height;
 
     .navigation {
       @include span-columns(9);
@@ -76,6 +80,7 @@ body.index {
   .color-overlay {
     background: rgba(255, 177, 0, 0.75);
     height: $hero-height;
+    min-height: $hero-min-height;
   }
 
   .hero {
@@ -310,6 +315,21 @@ body.events {
     min-width: 8em;
     margin-right: 1em;
     margin-top: 0;
+  }
+}
+
+.section.not-alone {
+  h1 {
+    background: $charcoal url('../images/macbook.jpg') no-repeat 0 -3em;
+    background-size: cover;
+    min-height: 10em;
+    padding-top: 2.5em;
+    padding-left: 1em;
+    padding-right: 50%;
+    margin-bottom: 1em;
+    width: 100%;
+    color: white;
+    @include text-shadow(rgba(0,0,0, 0.8) .125em .125em .5em);
   }
 }
 
