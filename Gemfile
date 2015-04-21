@@ -16,4 +16,3 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "bourbon"
 gem "neat"
 gem "bitters"
-gem "refills"
