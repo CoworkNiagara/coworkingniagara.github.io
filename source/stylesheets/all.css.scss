@@ -338,10 +338,14 @@ body.events {
   @include outer-container;
 
   ul>li {
-    @include span-columns(6);
-    img {
-      height: 5em;
-    }
+   display: inline-block;
+   text-align: left;
+
+   img {
+    min-width: 200px;
+    height: 5em;
+   }
+
   }
 
 }
