@@ -350,6 +350,11 @@ body.events {
 
 }
 
+.cta {
+  @extend %button;
+  font-size: 1.5em;
+}
+
 .mobile-toggle {
   display: none;
 }
