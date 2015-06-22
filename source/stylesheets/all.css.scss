@@ -359,4 +359,9 @@ body.events {
   display: none;
 }
 
+.event-logo img {
+  min-width: 7.5em;
+  max-width: 14em;
+}
+
 @import "mobile";
