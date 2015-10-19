@@ -1,0 +1,22 @@
+---
+title: Member Directory
+---
+<div class="section">
+<h1>Members</h1>
+<ol>
+<% data.members.members.each do |m| %>
+  <li itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name"><%=m.name %></span>
+    <span itemprop="email"><%=m.email%></span>
+    <img src="janedoe.jpg" itemprop="image" alt="Photo of <%=m.name%>"/>
+    <span itemprop="jobTitle"><%=m.practice%></span>
+    <span itemprop="telephone"><%=m.phone%></span>
+    <ul class="social">
+      <li class="twitter"><%=m.twitter%></li>
+      <li class="facebook"><%=m.facebook%></li>
+      <li class="linkedin"><%=m.linkedin%></li>
+    </ul>
+  </li>
+<% end %>
+</ol>
+</div>
