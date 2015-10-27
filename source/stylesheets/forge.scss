@@ -1,0 +1,35 @@
+body.forge {
+  text-align: left;
+  color: white;
+  background: #000;
+
+  header {
+    text-align: center;
+    background: #000 url('../images/forge-bg.jpg') no-repeat top center /cover;
+
+    img.logo {
+      height: 40vh;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: left;
+      padding: 2em 0;
+    }
+
+  }
+
+  .content {
+    font-size: 1.5em;
+
+    a:link, a:visited {
+      color: orange !important;
+    }
+
+    a:hover, a:active {
+      color: yellow !important;
+    }
+
+  }
+
+}
