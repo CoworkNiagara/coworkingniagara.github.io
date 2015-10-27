@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@coworkniagara">
+    <meta name="twitter:creator" content="@trevortwining">
+    <meta name="twitter:title" content="<%= current_page.data.title %>">
+    <meta name="twitter:description" content="<%= current_page.data.page_desc %>">
+    <meta name="twitter:image" content="http://www.coworkniagara.com/<%= current_page.data.twitter_image %>">
     <title><%= current_page.data.title || "Cowork Niagara" %></title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "all" %>
