@@ -5,9 +5,7 @@
 @import "neat/neat";
 @import "base/base";
 @import "components/components";
-
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 12);
+@import "forge";
 
 $hero-height: 70vh;
 $hero-min-height: 34em;
