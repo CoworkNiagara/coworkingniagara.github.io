@@ -1,1 +1,0 @@
-!function(n){n(document).ready(function(){n(".mobile-toggle").on("click",function(){n(".navigation").toggle(600)})})}(jQuery);
