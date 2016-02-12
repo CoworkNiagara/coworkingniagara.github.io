@@ -1,0 +1,40 @@
+---
+title: "Cowork Niagara's IndyBlog: The voice of Niagara's independent workforce"
+layout: bloghome
+
+---
+
+<section class="featured">
+  <% blog.articles[0...1].each do |article|
+
+    if (image = article.data.featured_image)
+      imgsrc = "/blog/photos/" + image
+    end  %>
+  <% if imgsrc %>
+    <article style="background-image: url('<%= imgsrc %>')">
+  <% else %>
+    <article>
+  <% end %>
+    <div class="ribbon-wrapper">
+      <div class="ribbon">Featured Article</div>
+    </div>
+
+    <div class="content">
+    <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+    <!-- use article.summary(250) if you have Nokogiri available to show just
+         the first 250 characters -->
+      <div class="summary"><%= article.data.seo_desc %></div>
+    </div>
+  </article>
+  <% end %>
+</section>
+<section class="secondary">
+  <% blog.articles[1...10].each do |article| %>
+  <article class="secondary">
+    <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
+    <!-- use article.summary(250) if you have Nokogiri available to show just
+         the first 250 characters -->
+    <div class="summary"><%= article.data.seo_desc %></div>
+  </article>
+  <% end %>
+</section>

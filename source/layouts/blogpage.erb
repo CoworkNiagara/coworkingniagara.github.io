@@ -1,0 +1,46 @@
+<% wrap_layout :blog do %>
+  <div class="header">
+    <div class="section">
+      <div class="w">
+        <div class="logo">
+          <%= link_to %{<img src="/images/logo-horizontal.svg">}, "/" %>
+        </div>
+
+        <div class="mobile-toggle">
+          &#9776;
+        </div>
+      </div>
+
+      <div class="navigation">
+        <%= partial "navigation.html" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="section">
+      <h1>Cowork Niagara's IndyBlog</h1>
+    </div>
+  </div>
+
+  <section class="main">
+    <article>
+    <% if (image = current_page.data.featured_image) %>
+      <img class="featured-image" src="/blog/photos/<%= image %>" alt="<%= current_page.data.featured_alt %>">
+    <% end %>
+      <h1><%= current_page.data.title %></h1>
+      <%= yield %>
+    </article>
+  </section>
+  <% if (author = current_page.data.byline) %>
+    <aside class="author">
+      <div class="content">
+        <h3>About the author: <%=data.authors[author]['name'] %></h3>
+        <p><%=data.authors[author]['bio'] %></p>
+        <p><span class="label">Twitter: </span><a href="https://twitter.com/<%=data.authors[author]['twitter'] %>">@<%=data.authors[author]['twitter'] %></a></p>
+      </div>
+    </aside>
+  <% end %>
+
+  <%= partial "footer.html" %>
+<% end %>
