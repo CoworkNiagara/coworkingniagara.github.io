@@ -1,6 +1,3 @@
-@charset "utf-8";
-
-@import "compass/css3";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
@@ -19,10 +16,10 @@ body {
   margin: 0;
 }
 
-.section {
+.section, section.main {
   @include outer-container;
-  padding: 0 1em;
 }
+
 
 .navigation {
   ul {
@@ -328,7 +325,7 @@ body.events {
     margin-bottom: 1em;
     width: 100%;
     color: white;
-    @include text-shadow(rgba(0,0,0, 0.8) .125em .125em .5em);
+    text-shadow: rgba(0,0,0, 0.8) .125em .125em .5em;
   }
 }
 
