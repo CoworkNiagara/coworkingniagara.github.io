@@ -24,18 +24,21 @@
 section.featured article {
   border: 1px solid;
   position: relative;
-  overflow: hidden;
   min-height: 200px;
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
+  @include media($mobile) {
+    height: 90vh;
+  }
+
   .content {
     padding: 1rem;
-    position: absolute;
-    bottom: 0;
     background: $cowork-orange;
+      position: absolute;
+      bottom: 0;
   }
 
   .content img {
@@ -44,6 +47,10 @@ section.featured article {
   }
 
   .ribbon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 240px;
     width: 35%;
     background-color: $cowork-orange;
     color: white;
@@ -53,6 +60,10 @@ section.featured article {
   h2 {
     font-size: 1.5rem;
     color: white;
+
+      @include media($mobile) {
+        font-size: 1.25rem;
+      }
 
     a:visited, a:link {
       color: white;
@@ -88,8 +99,16 @@ aside.author {
   flex-flow: row wrap;
 
   article.secondary {
-    width: 24%;
-    margin-right: 1%;
+    @include media($large-screen-up) {
+      width: 24%;
+      margin-right: 1%;
+      flex-grow: 1;
+    }
+
+    @include media($mobile) {
+      padding: 0 1rem 2rem;
+    }
+
   }
 
   h2 {
