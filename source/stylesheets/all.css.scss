@@ -143,9 +143,6 @@ body.index {
       @include hide-text();
       background-size: cover !important;
     }
-    .devtricks {
-      background: transparent url('../images/events/devtricks.png') no-repeat center center;
-    }
     .biztricks {
       background: transparent url('../images/events/biztricks.png') no-repeat center center;
     }
@@ -157,9 +154,6 @@ body.index {
     }
     .podtricks {
       background: transparent url('../images/events/podtricks.png') no-repeat center center;
-    }
-    .openhack {
-      background: transparent url('../images/events/openhack.png') no-repeat center center;
     }
   }
 }
